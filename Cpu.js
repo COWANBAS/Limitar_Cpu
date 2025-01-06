@@ -3,6 +3,7 @@
 // @description     Verifica se a guia do navegador esta sendo usada, se nao estiver limita o uso da cpu na guia
 // @version         1.0
 // @author          Cowanbas
+// @match           *://*/*
 // @run-at          document-start
 // ==/UserScript==
 
