@@ -29,8 +29,11 @@ Quando a guia é trazida de volta à vista, o script pode restaurar o comportame
 
 *BENEFICIOS DO SCRIPT*
 
-*Economia de recursos*: O script ajuda a reduzir o uso de recursos (como CPU e memória) quando a guia não está sendo usada, permitindo que o navegador dedique mais poder de processamento a outras tarefas.
+*Economia de recursos*: 
+O script ajuda a reduzir o uso de recursos (como CPU e memória) quando a guia não está sendo usada, permitindo que o navegador dedique mais poder de processamento a outras tarefas.
 
-*Melhoria na performance*: A limitação do uso da CPU durante períodos de inatividade pode melhorar a performance geral do sistema, especialmente em dispositivos com menos recursos.
+*Melhoria na performance*: 
+A limitação do uso da CPU durante períodos de inatividade pode melhorar a performance geral do sistema, especialmente em dispositivos com menos recursos.
 
-*Compatibilidade com navegadores modernos e antigos*: O script verifica se o método requestIdleCallback está disponível no navegador, oferecendo uma abordagem mais moderna e eficiente para reduzir o uso de recursos. Caso contrário, recorre ao setTimeout como uma alternativa mais simples.
+*Compatibilidade com navegadores modernos e antigos*: 
+O script verifica se o método requestIdleCallback está disponível no navegador, oferecendo uma abordagem mais moderna e eficiente para reduzir o uso de recursos. Caso contrário, recorre ao setTimeout como uma alternativa mais simples.
