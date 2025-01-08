@@ -23,6 +23,7 @@ O script pode executar ações específicas para reduzir o uso de CPU, já que a
 ![image](https://github.com/user-attachments/assets/f11b7b88-c600-4b64-a925-cda2279087aa)
 
 *Fallback com setTimeout*
+
 Para navegadores que não suportam "requestIdleCallback", o script utiliza o "setTimeout", que permite adiar a execução de tarefas. Isso também ajuda a reduzir o impacto no desempenho da CPU enquanto a guia está oculta.
 
 ![image](https://github.com/user-attachments/assets/cfdbe6ab-5568-4d23-888a-d77bc2bf0148)
