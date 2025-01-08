@@ -48,8 +48,31 @@ O objetivo desse script parece ser minimizar o uso de recursos da CPU enquanto a
 
 *Evento de visibilidade*
 
-document.addEventListener: Este comando adiciona um ouvinte de evento que aguarda uma mudança específica no estado do documento.
+Document.addEventListener: Este comando adiciona um ouvinte de evento que aguarda uma mudança específica no estado do documento.
 "visibilitychange": O evento visibilitychange é acionado quando a visibilidade da página muda, ou seja, quando a aba ou a janela do navegador se torna ativa ou não.
 Função anônima: A função que é executada quando o evento visibilitychange é disparado. Dentro dessa função, a lógica será executada para verificar se a aba está visível ou não.
 
+![image](https://github.com/user-attachments/assets/a6ca70d3-4c88-403e-8106-e440d753e5e4)
 
+*Verificação do estado de visibilidade*
+
+Document.visibilityState: Esse comando acessa o estado de visibilidade do documento. Ele pode ter dois valores:
+"visible": Significa que a aba está visível (o usuário está interagindo com a página).
+"hidden": Significa que a aba não está visível (o usuário não está interagindo com a página, pode ter mudado para outra aba).
+if (document.visibilityState == "hidden"): O if verifica se a página está em estado "oculto", ou seja, a aba não está sendo visualizada.
+
+![image](https://github.com/user-attachments/assets/1b26c2ec-ab32-4daa-b6fe-6de80c6e314f)
+
+*Ocultar a página*
+
+Document.documentElement: Acessa o elemento <html> da página (o nó raiz do documento).
+style.display = "none": Essa linha altera a propriedade CSS display do elemento <html> para "none", fazendo com que todo o conteúdo da página seja ocultado. Esse comando basicamente esconde a página inteira da vista do usuário, o que, em teoria, ajuda a reduzir o consumo de recursos enquanto a aba não está sendo usada.
+
+![image](https://github.com/user-attachments/assets/7c9d7bf9-c97d-4e07-9c45-eb3973b21bb8)
+
+*Restaurar a página quando a aba e aberta*
+
+Se o estado da visibilidade mudar para "visible", o código dentro do else será executado:
+document.documentElement.style.display = "block": Essa linha reverte o estilo da página, definindo a propriedade display do <html> para "block", o que faz com que a página seja exibida novamente quando o usuário voltar a visualizar a aba.
+
+![image](https://github.com/user-attachments/assets/5d2d5c0b-a52b-4231-b7a9-aa817b8bf7cf)
