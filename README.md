@@ -1,2 +1,1 @@
-Apenas um java script que limita o uso da cpu em guias que estão em segundo plano.
-O script itentifica a variavel de elementos na tela e os desativa momentaneamente enquanto não se esta usando a guia
+O script começa adicionando um ouvinte de evento ao "document" para detectar mudanças no estado de visibilidade da página. O evento "visibilitychange" é disparado sempre que a visibilidade da guia do navegador muda, ou seja, quando o usuário alterna entre guias ou minimiza a janela.
