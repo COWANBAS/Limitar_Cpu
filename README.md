@@ -75,3 +75,9 @@ A limitação do uso da CPU durante períodos de inatividade pode melhorar a per
 
 *Compatibilidade com navegadores modernos e antigos*: 
 O script verifica se o método requestIdleCallback está disponível no navegador, oferecendo uma abordagem mais moderna e eficiente para reduzir o uso de recursos. Caso contrário, recorre ao setTimeout como uma alternativa mais simples.
+
+*CPU 3.0*
+
+Simplesmente a implementação das duas ultimas versão em uma sò!
+
+![image](https://github.com/user-attachments/assets/63ec0a17-e344-4707-ad48-21e0d0a9fe35)
