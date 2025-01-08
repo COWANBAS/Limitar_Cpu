@@ -1,3 +1,38 @@
+*SCRIPT 1.0*
+
+O objetivo desse script e minimizar o uso de recursos da CPU enquanto a aba do navegador está "oculta", ocultando items da pagina porém a pagina continua funcionado mesmo ociosa com audio e video rodanndo etc. Quando a página fica visível novamente, ela é restaurada. Isso pode ajudar a reduzir o consumo de CPU e energia enquanto a aba não está sendo usada, mas o script não limita diretamente o uso da CPU, e sim "oculta" a página para ajudar a reduzir o consumo.
+
+*Evento de visibilidade*
+
+Document.addEventListener: Este comando adiciona um ouvinte de evento que aguarda uma mudança específica no estado do documento.
+"visibilitychange": O evento visibilitychange é acionado quando a visibilidade da página muda, ou seja, quando a aba ou a janela do navegador se torna ativa ou não.
+Função anônima: A função que é executada quando o evento visibilitychange é disparado. Dentro dessa função, a lógica será executada para verificar se a aba está visível ou não.
+
+![image](https://github.com/user-attachments/assets/a6ca70d3-4c88-403e-8106-e440d753e5e4)
+
+*Verificação do estado de visibilidade*
+
+Document.visibilityState: Esse comando acessa o estado de visibilidade do documento. Ele pode ter dois valores:
+"visible": Significa que a aba está visível (o usuário está interagindo com a página).
+"hidden": Significa que a aba não está visível (o usuário não está interagindo com a página, pode ter mudado para outra aba).
+if (document.visibilityState == "hidden"): O if verifica se a página está em estado "oculto", ou seja, a aba não está sendo visualizada.
+
+![image](https://github.com/user-attachments/assets/1b26c2ec-ab32-4daa-b6fe-6de80c6e314f)
+
+*Ocultar a página*
+
+Document.documentElement: Acessa o elemento <html> da página (o nó raiz do documento).
+style.display = "none": Essa linha altera a propriedade CSS display do elemento <html> para "none", fazendo com que todo o conteúdo da página seja ocultado. Esse comando basicamente esconde a página inteira da vista do usuário, o que, em teoria, ajuda a reduzir o consumo de recursos enquanto a aba não está sendo usada.
+
+![image](https://github.com/user-attachments/assets/7c9d7bf9-c97d-4e07-9c45-eb3973b21bb8)
+
+*Restaurar a página quando a aba e aberta*
+
+Se o estado da visibilidade mudar para "visible", o código dentro do else será executado:
+document.documentElement.style.display = "block": Essa linha reverte o estilo da página, definindo a propriedade display do <html> para "block", o que faz com que a página seja exibida novamente quando o usuário voltar a visualizar a aba.
+
+![image](https://github.com/user-attachments/assets/03f2e386-c872-4f32-a4b6-3ec59aecb5cd)
+
 *CPU 2.0*
 
 *Adicionando um ouvinte de evento visibilitychange*
@@ -40,39 +75,3 @@ A limitação do uso da CPU durante períodos de inatividade pode melhorar a per
 
 *Compatibilidade com navegadores modernos e antigos*: 
 O script verifica se o método requestIdleCallback está disponível no navegador, oferecendo uma abordagem mais moderna e eficiente para reduzir o uso de recursos. Caso contrário, recorre ao setTimeout como uma alternativa mais simples.
-
-*SCRIPT 1.0*
-
-O objetivo desse script e minimizar o uso de recursos da CPU enquanto a aba do navegador está "oculta", ocultando items da pagina porém a pagina continua funcionado mesmo ociosa com audio e video rodanndo etc. Quando a página fica visível novamente, ela é restaurada. Isso pode ajudar a reduzir o consumo de CPU e energia enquanto a aba não está sendo usada, mas o script não limita diretamente o uso da CPU, e sim "oculta" a página para ajudar a reduzir o consumo.
-
-*Evento de visibilidade*
-
-Document.addEventListener: Este comando adiciona um ouvinte de evento que aguarda uma mudança específica no estado do documento.
-"visibilitychange": O evento visibilitychange é acionado quando a visibilidade da página muda, ou seja, quando a aba ou a janela do navegador se torna ativa ou não.
-Função anônima: A função que é executada quando o evento visibilitychange é disparado. Dentro dessa função, a lógica será executada para verificar se a aba está visível ou não.
-
-![image](https://github.com/user-attachments/assets/a6ca70d3-4c88-403e-8106-e440d753e5e4)
-
-*Verificação do estado de visibilidade*
-
-Document.visibilityState: Esse comando acessa o estado de visibilidade do documento. Ele pode ter dois valores:
-"visible": Significa que a aba está visível (o usuário está interagindo com a página).
-"hidden": Significa que a aba não está visível (o usuário não está interagindo com a página, pode ter mudado para outra aba).
-if (document.visibilityState == "hidden"): O if verifica se a página está em estado "oculto", ou seja, a aba não está sendo visualizada.
-
-![image](https://github.com/user-attachments/assets/1b26c2ec-ab32-4daa-b6fe-6de80c6e314f)
-
-*Ocultar a página*
-
-Document.documentElement: Acessa o elemento <html> da página (o nó raiz do documento).
-style.display = "none": Essa linha altera a propriedade CSS display do elemento <html> para "none", fazendo com que todo o conteúdo da página seja ocultado. Esse comando basicamente esconde a página inteira da vista do usuário, o que, em teoria, ajuda a reduzir o consumo de recursos enquanto a aba não está sendo usada.
-
-![image](https://github.com/user-attachments/assets/7c9d7bf9-c97d-4e07-9c45-eb3973b21bb8)
-
-*Restaurar a página quando a aba e aberta*
-
-Se o estado da visibilidade mudar para "visible", o código dentro do else será executado:
-document.documentElement.style.display = "block": Essa linha reverte o estilo da página, definindo a propriedade display do <html> para "block", o que faz com que a página seja exibida novamente quando o usuário voltar a visualizar a aba.
-
-![image](https://github.com/user-attachments/assets/03f2e386-c872-4f32-a4b6-3ec59aecb5cd)
-
