@@ -12,7 +12,7 @@ Dentro do ouvinte de evento, o script verifica o valor de "document.visibilitySt
 
 ![image](https://github.com/user-attachments/assets/273ae2e4-a2e6-46c4-9a34-9189afbf040c)
 
-*Se a guia estiver oculta (visibilityState === "hidden")*
+*Se a guia estiver oculta*
 
 O script pode executar ações específicas para reduzir o uso de CPU, já que a guia não está sendo visualizada e o navegador pode economizar recursos.
 Uso de requestIdleCallback: Quando a guia está oculta, o script tenta usar a função requestIdleCallback, se disponível, para adiar operações pesadas até que o navegador esteja ocioso. Isso ajuda a evitar sobrecarregar o processador quando a guia não está em uso.
