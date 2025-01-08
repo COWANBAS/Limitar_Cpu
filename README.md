@@ -1,5 +1,3 @@
-
-
 *CPU 2.0*
 
 *Adicionando um ouvinte de evento visibilitychange*
@@ -45,7 +43,7 @@ O script verifica se o método requestIdleCallback está disponível no navegado
 
 *SCRIPT 1.0*
 
-O objetivo desse script parece ser minimizar o uso de recursos da CPU enquanto a aba do navegador está "oculta" (quando você não está olhando para ela), ocultando items da pagina porém a pagina continua funcionado mesmo ociosa como audio e video tocando etc. Quando a página fica visível novamente, ela é restaurada. Isso pode ajudar a reduzir o consumo de CPU e energia enquanto a aba não está sendo usada, mas o script não limita diretamente o uso da CPU, e sim "oculta" a página para ajudar a reduzir o consumo.
+O objetivo desse script e minimizar o uso de recursos da CPU enquanto a aba do navegador está "oculta", ocultando items da pagina porém a pagina continua funcionado mesmo ociosa com audio e video rodanndo etc. Quando a página fica visível novamente, ela é restaurada. Isso pode ajudar a reduzir o consumo de CPU e energia enquanto a aba não está sendo usada, mas o script não limita diretamente o uso da CPU, e sim "oculta" a página para ajudar a reduzir o consumo.
 
 *Evento de visibilidade*
 
