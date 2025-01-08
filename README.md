@@ -41,3 +41,15 @@ A limitação do uso da CPU durante períodos de inatividade pode melhorar a per
 
 *Compatibilidade com navegadores modernos e antigos*: 
 O script verifica se o método requestIdleCallback está disponível no navegador, oferecendo uma abordagem mais moderna e eficiente para reduzir o uso de recursos. Caso contrário, recorre ao setTimeout como uma alternativa mais simples.
+
+*SCRIPT 1.0*
+
+O objetivo desse script parece ser minimizar o uso de recursos da CPU enquanto a aba do navegador está "oculta" (quando você não está olhando para ela), ocultando items da pagina porém a pagina continua funcionado mesmo ociosa como audio e video tocando etc. Quando a página fica visível novamente, ela é restaurada. Isso pode ajudar a reduzir o consumo de CPU e energia enquanto a aba não está sendo usada, mas o script não limita diretamente o uso da CPU, e sim "oculta" a página para ajudar a reduzir o consumo.
+
+*Evento de visibilidade*
+
+document.addEventListener: Este comando adiciona um ouvinte de evento que aguarda uma mudança específica no estado do documento.
+"visibilitychange": O evento visibilitychange é acionado quando a visibilidade da página muda, ou seja, quando a aba ou a janela do navegador se torna ativa ou não.
+Função anônima: A função que é executada quando o evento visibilitychange é disparado. Dentro dessa função, a lógica será executada para verificar se a aba está visível ou não.
+
+
