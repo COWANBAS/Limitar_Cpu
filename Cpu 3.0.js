@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name            Folga na cpu
 // @description     Verifica se a guia do navegador está sendo usada, se não estiver, limita o uso da cpu na guia
-// @version         1.0
+// @version         3.0
 // @author          Cowanbas
 // @match           *://*/*
 // @run-at          document-start
