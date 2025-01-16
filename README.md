@@ -1,3 +1,5 @@
+GREASYFORK: https://greasyfork.org/en/scripts/523944-folga-na-cpu
+
 *CPU 1.0*
 
 O objetivo desse script e minimizar o uso de recursos da CPU enquanto a aba do navegador está "oculta", ocultando items da pagina porém a pagina continua funcionado mesmo ociosa com audio e video rodanndo etc. Quando a página fica visível novamente, ela é restaurada. Isso pode ajudar a reduzir o consumo de CPU e energia enquanto a aba não está sendo usada, mas o script não limita diretamente o uso da CPU, e sim "oculta" a página para ajudar a reduzir o consumo.
