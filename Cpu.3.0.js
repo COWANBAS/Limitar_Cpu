@@ -2,7 +2,7 @@
 // @name            Folga na cpu
 // @description     Verifica se a guia do navegador esta sendo usada, se nao estiver limita o uso da cpu na guia
 // @namespace       CowanCPU
-// @license         CowBas
+// @license         GPL-3.0
 // @version         3.0
 // @author          Cowanbas
 // @match           *://*/*
@@ -28,4 +28,5 @@ document.addEventListener("visibilitychange", function () {
     // Mostrar o conteúdo da página quando a guia for aberta Novamente
     document.documentElement.style.display = "block";
   }
+
 });
