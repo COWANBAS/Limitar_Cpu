@@ -3,7 +3,7 @@
 // @description     Verifica se a guia do navegador esta sendo usada, se nao estiver limita o uso da cpu na guia
 // @namespace       CowanCPU
 // @license         CowBas
-// @version         1.0
+// @version         GPL-3.0
 // @author          Cowanbas
 // @match           *://*/*
 // @run-at          document-start
@@ -17,3 +17,4 @@ document.addEventListener("visibilitychange", function () {
         document.documentElement.style.display = "block";
     }
 });
+
