@@ -1,9 +1,8 @@
-﻿// ==UserScript==
+// ==UserScript==
 // @name            Folga na cpu
-// @description     Verifica se a guia do navegador esta sendo usada, se nao estiver limita o uso da cpu na guia
-// @namespace       CowanCPU
+// @description     Verifica se a guia do navegador está sendo usada, se não estiver, limita o uso da cpu na guia
 // @license         GPL-3.0
-// @version         3.0
+// @version         4.0
 // @author          Cowanbas
 // @match           *://*/*
 // @run-at          document-start
@@ -28,5 +27,4 @@ document.addEventListener("visibilitychange", function () {
     // Mostrar o conteúdo da página quando a guia for aberta Novamente
     document.documentElement.style.display = "block";
   }
-
 });
