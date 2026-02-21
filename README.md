@@ -15,7 +15,7 @@ Document.visibilityState: Esse comando acessa o estado de visibilidade do docume
 "hidden": Significa que a aba não está visível (o usuário não está interagindo com a página, pode ter mudado para outra aba).
 if (document.visibilityState == "hidden"): O if verifica se a página está em estado "oculto", ou seja, a aba não está sendo visualizada.
 
-![image](https://github.com/user-attachments/assets/1b26c2ec-ab32-4daa-b6fe-6de80c6e314f)
+<img width="458" height="45" alt="image" src="https://github.com/user-attachments/assets/16cfd98c-ba5c-42cb-bdec-64d04e6ff9ea" />
 
 *Ocultar a página*
 
