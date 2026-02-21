@@ -29,4 +29,4 @@ style.display = "none": Essa linha altera a propriedade CSS display do elemento 
 Se o estado da visibilidade mudar para "visible", o código dentro do else será executado:
 document.documentElement.style.display = "block": Essa linha reverte o estilo da página, definindo a propriedade display do <html> para "block", o que faz com que a página seja exibida novamente quando o usuário voltar a visualizar a aba.
 
-![image](https://github.com/user-attachments/assets/03f2e386-c872-4f32-a4b6-3ec59aecb5cd)
+<img width="549" height="105" alt="image" src="https://github.com/user-attachments/assets/806bd6ca-f046-4131-bb6d-9fb8e34091de" />
