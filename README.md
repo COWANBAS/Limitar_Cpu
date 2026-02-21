@@ -22,7 +22,7 @@ if (document.visibilityState == "hidden"): O if verifica se a página está em e
 Document.documentElement: Acessa o elemento <html> da página (o nó raiz do documento).
 style.display = "none": Essa linha altera a propriedade CSS display do elemento <html> para "none", fazendo com que todo o conteúdo da página seja ocultado. Esse comando basicamente esconde a página inteira da vista do usuário, o que, em teoria, ajuda a reduzir o consumo de recursos enquanto a aba não está sendo usada.
 
-![image](https://github.com/user-attachments/assets/7c9d7bf9-c97d-4e07-9c45-eb3973b21bb8)
+<img width="502" height="42" alt="image" src="https://github.com/user-attachments/assets/41c8bd7c-3e2b-4048-be1c-8c1944e3e066" />
 
 *Restaurar a página quando a aba e aberta*
 
