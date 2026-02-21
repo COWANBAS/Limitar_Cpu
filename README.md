@@ -6,7 +6,7 @@ Document.addEventListener: Este comando adiciona um ouvinte de evento que aguard
 "visibilitychange": O evento visibilitychange é acionado quando a visibilidade da página muda, ou seja, quando a aba ou a janela do navegador se torna ativa ou não.
 Função anônima: A função que é executada quando o evento visibilitychange é disparado. Dentro dessa função, a lógica será executada para verificar se a aba está visível ou não.
 
-![image](https://github.com/user-attachments/assets/a6ca70d3-4c88-403e-8106-e440d753e5e4)
+<img width="598" height="27" alt="image" src="https://github.com/user-attachments/assets/ee3500ef-a7cf-439d-b223-541fd727e960" />
 
 *Verificação do estado de visibilidade*
 
