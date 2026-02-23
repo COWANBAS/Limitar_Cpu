@@ -13,7 +13,6 @@ document.addEventListener("visibilitychange", function () {
   if (document.visibilityState === "hidden") {
     // Oculta o conteúdo da página 
     document.documentElement.style.display = "none";
-
     // Executa novamente
     if (window.requestIdleCallback) {
       window.requestIdleCallback(function () {
@@ -30,3 +29,4 @@ document.addEventListener("visibilitychange", function () {
     document.documentElement.style.display = "block";
   }
 });
+
