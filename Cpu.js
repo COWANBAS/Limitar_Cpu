@@ -8,25 +8,13 @@
 // @run-at          document-start
 // ==/UserScript==
 
-// Verifica se a página esta oculta
+/// Verifica se a página está oculta
 document.addEventListener("visibilitychange", function () {
   if (document.visibilityState === "hidden") {
-    // Oculta o conteúdo da página 
+    // Oculta o conteúdo da página
     document.documentElement.style.display = "none";
-    // Executa novamente
-    if (window.requestIdleCallback) {
-      window.requestIdleCallback(function () {
-    document.documentElement.style.display = "none";
-      });
-    // Para navegadores que não suportam requestIdleCallback
-    } else {
-      setTimeout(function () {
-    document.documentElement.style.display = "none";
-      }, 1000);
-    }
   } else {
-    // Mostrar o conteúdo da página quando a guia for aberta Novamente
+    // Mostra o conteúdo da página
     document.documentElement.style.display = "block";
   }
 });
-
