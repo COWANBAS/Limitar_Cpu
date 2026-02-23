@@ -16,7 +16,7 @@ document.addEventListener("visibilitychange", function () {
 
     // Executa novamente
     if (window.requestIdleCallback) {
-      requestIdleCallback(function () {
+      window.requestIdleCallback(function () {
     document.documentElement.style.display = "none";
       });
     // Para navegadores que não suportam requestIdleCallback
