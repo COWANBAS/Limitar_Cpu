@@ -8,19 +8,21 @@
 // @run-at          document-start
 // ==/UserScript==
 
+// Verifica se a página esta oculta
 document.addEventListener("visibilitychange", function () {
   if (document.visibilityState === "hidden") {
-    // Oculta o conteúdo da página e limitar o uso da CPU
+    // Oculta o conteúdo da página 
     document.documentElement.style.display = "none";
 
-    // Limita o uso da CPU
+    // Executa novamente
     if (window.requestIdleCallback) {
       requestIdleCallback(function () {
-        // Reduzi uso da CPU quando a guia está oculta
+    document.documentElement.style.display = "none";
       });
+    // Para navegadores que não suportam requestIdleCallback
     } else {
       setTimeout(function () {
-        // Para navegadores que não suportam requestIdleCallback
+    document.documentElement.style.display = "none";
       }, 1000);
     }
   } else {
@@ -28,4 +30,3 @@ document.addEventListener("visibilitychange", function () {
     document.documentElement.style.display = "block";
   }
 });
-
